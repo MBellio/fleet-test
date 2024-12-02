@@ -1,0 +1,8 @@
+namespace: default
+targets:
+  - name: dev-clusters
+    clusterSelector:
+      matchLabels:
+        env: pilot
+paths:
+  - .

@@ -1,0 +1,8 @@
+namespace: default
+targets:
+  - name: prod-clusters
+    clusterSelector:
+      matchLabels:
+        env: production
+paths:
+  - .
