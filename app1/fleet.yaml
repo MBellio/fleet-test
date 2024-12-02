@@ -1,9 +1,9 @@
 namespace: default
 targetCustomizations:
 - name: dev
-  clusterSelector:
-    matchLabels:
-      env: dev
+    #  clusterSelector:
+    #    matchLabels:
+    #      env: dev
   kustomize:
     dir: overlays/dev
 
@@ -13,6 +13,7 @@ targetCustomizations:
       env: test
   kustomize:
     dir: overlays/test
+  doNotDeploy: true
 
 - name: prod
   clusterSelector:
@@ -20,3 +21,4 @@ targetCustomizations:
       env: prod
   kustomize:
     dir: overlays/prod
+  doNotDeploy: true

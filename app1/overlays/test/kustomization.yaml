@@ -1,4 +1,4 @@
 resources:
   - ../../base
 commonLabels:
-  overlay: dev
+  overlay: test
