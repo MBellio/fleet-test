@@ -1,8 +1,8 @@
 namespace: default
 targetCustomizations:
 - name: dev
-    clusterSelector:
-      matchLabels:
-        env: dev
+  clusterSelector:
+    matchLabels:
+      env: dev
   kustomize:
     dir: overlays/test
