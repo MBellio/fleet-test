@@ -5,4 +5,10 @@ targetCustomizations:
     matchLabels:
       env: dev
   kustomize:
+    dir: overlays/dev
+- name: pilot
+  clusterSelector:
+    matchLabels:
+      env: pilot
+  kustomize:
     dir: overlays/test
