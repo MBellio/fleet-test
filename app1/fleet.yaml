@@ -7,8 +7,12 @@ targetCustomizations:
   kustomize:
     dir: overlays/dev
 - name: pilot
-  clusterSelector:
+  clusterGroupSelector:
     matchLabels:
       env: pilot
   kustomize:
-    dir: overlays/test
+    dir: overlays/test   
+#  clusterSelector:
+#    matchLabels:
+#      env: pilot
+
