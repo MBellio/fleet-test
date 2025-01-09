@@ -1,5 +1,8 @@
 resources:
   - ../../base
   - configmap.yaml
+replicas:
+  - name: app1
+    count: 3
 commonLabels:
   overlay: test
