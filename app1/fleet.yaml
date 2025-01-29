@@ -6,13 +6,10 @@ targetCustomizations:
       env: dev
   kustomize:
     dir: overlays/dev
-- name: pilot
-    #  clusterGroupSelector:
-    #    matchLabels:
-    #      env: pilot
-  kustomize:
-    dir: overlays/test   
-  clusterSelector:
-    matchLabels:
-      env: pilot
+  #- name: pilot
+  #  kustomize:
+  #    dir: overlays/test   
+  #  clusterSelector:
+  #    matchLabels:
+  #      env: pilot
 
