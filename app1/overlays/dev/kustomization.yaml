@@ -11,3 +11,10 @@ patches:
       - op: replace
         path: /spec/template/spec/containers/0/image
         value: nginx:stable-alpine-perl
+  - target:
+      kind: Ingress
+      name: prespe-sede-j4shop
+    patch: |-
+      - op: replace
+        path: /spec/rules/0/host
+        value: prespe-sede-j4shop-old-SVILUPPO-FLEET.apps.osh.esselunga.net
