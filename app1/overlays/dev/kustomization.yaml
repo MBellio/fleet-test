@@ -2,3 +2,12 @@ resources:
   - ../../base
 commonLabels:
   overlay: dev
+
+patches:
+  - target:
+      kind: Deployment
+      name: app1
+    patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: nginx:stable-alpine-perl
