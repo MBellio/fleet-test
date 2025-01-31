@@ -1,0 +1,22 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    app.quarkus.io/quarkus-version: 3.10.2
+    app.quarkus.io/vcs-uri: https://gitlab.mil.esselunga.net/digitalhub/prespe/prespe-backend-j4shop.git
+  labels:
+    app.kubernetes.io/name: prespe-sede-j4shop
+  name: prespe-sede-j4shop
+spec:
+  rules:
+    - host: prespe-backend.apps.ranchersbx.esselunga.net
+      http:
+        paths:
+          - backend:
+              service:
+                name: prespe-sede-j4shop
+                port:
+                  name: http
+            path: /
+            pathType: Prefix
