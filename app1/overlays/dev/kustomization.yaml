@@ -17,4 +17,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/rules/0/host
-        value: prespe-sede-j4shop-old-SVILUPPO-FLEET.apps.osh.esselunga.net
+        value: prespe-sede-j4shop-teste-fleet.apps.osh.esselunga.net
