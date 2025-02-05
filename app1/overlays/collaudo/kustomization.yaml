@@ -1,8 +1,10 @@
 resources:
   - ../../base
-  - configmap.yaml
-replicas:
-  - name: app1
-    count: 3
 commonLabels:
-  overlay: test
+  overlay: collaudo
+
+patches:
+  - target:
+      kind: Deployment
+      name: app1
+    path: patches/deployment.yml
