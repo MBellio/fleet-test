@@ -6,10 +6,10 @@ targetCustomizations:
       env: dev
   kustomize:
     dir: overlays/dev
-- name: pilot
+- name: collaudo
   kustomize:
-    dir: overlays/test   
+    dir: overlays/collaudo   
   clusterSelector:
     matchLabels:
-      env: pilot
+      env: collaudo
 
